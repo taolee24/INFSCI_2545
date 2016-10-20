@@ -9,7 +9,7 @@ TaoLi(tal88)
 
 In this project, I designed 3 user stories. Each story has 3 scenarios. Because different Firefox drivers and Firefox are not compatible, so I choose selenium-java-2.52.0.jar, selenium-server-standalone-2.52.0.jar and Firefox 46.0.1 to run the test.
 
-I met some problems during the project. First, during the login test, I need to test different situations when users input incorrect username or password. But my IP address was blocked many times, so I have to send email to unlock again and again. The second problem is that the register page has some calculations to verify users who register and the calculations will change every time you refresh the page. So I do not know how to get the numbers and input the answer according to the changing calculations.
+I met some problems during the project. First, during the login test, I need to test different situations when users input incorrect username or password. But my IP address was blocked many times, so I have to send email to unlock again and again. The second problem is that the register page has some calculations to verify users who register and the calculations will change every time you refresh the page. So I do not know how to get the numbers and input the right answer according to the changing calculations.
 
 #User stories and scenarios
 
