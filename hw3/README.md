@@ -19,9 +19,9 @@ As a user I have to register on the web site so that I can buy products
 
 ###Scenario 1
 
-Given I am in the register page, http://store.demoqa.com/tools-qa/?action=register
-When I input a invalid email address taolee_@.com
-Then I should get an error message “The email address isn’t correct”
+Given I am in the register page, http://store.demoqa.com/tools-qa/?action=register.
+When I input a invalid email address taolee_@.com.
+Then I should get an error message “The email address isn’t correct”.
 
 
 ###Scenario 2
