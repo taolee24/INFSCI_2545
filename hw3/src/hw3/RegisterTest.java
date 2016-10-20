@@ -36,10 +36,10 @@ public class RegisterTest {
 	    driver.findElement(By.id("user_email")).clear();
 	    driver.findElement(By.id("user_email")).sendKeys("taolee_@.com");
 	    driver.findElement(By.id("aiowps-captcha-answer")).clear();
-	    driver.findElement(By.id("aiowps-captcha-answer")).sendKeys("");
+	    driver.findElement(By.id("aiowps-captcha-answer")).sendKeys("11");
 	    driver.findElement(By.id("wp-submit")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		WebElement msg = driver.findElement(By.xpath("//*[@id=\"ajax_loginform\"]/p[1]/weak"));
+		WebElement msg = driver.findElement(By.xpath("//*[@id=\"ajax_registerform\"]/p[1]/strong[1]"));
 		assertEquals("ERROR: The email address isn’t correct.", msg.getText());
 	}
 //This test is to assume that if a user use a registered username to register
@@ -51,10 +51,10 @@ public class RegisterTest {
 	    driver.findElement(By.id("user_email")).clear();
 	    driver.findElement(By.id("user_email")).sendKeys("tal88@pitt.edu");
 	    driver.findElement(By.id("aiowps-captcha-answer")).clear();
-	    driver.findElement(By.id("aiowps-captcha-answer")).sendKeys("");
+	    driver.findElement(By.id("aiowps-captcha-answer")).sendKeys("11");
 	    driver.findElement(By.id("wp-submit")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		WebElement msg = driver.findElement(By.xpath("//*[@id=\"ajax_loginform\"]/p[1]/weak"));
+		WebElement msg = driver.findElement(By.xpath("//*[@id=\"ajax_registerform\"]/p[1]/strong[1]"));
 		assertEquals("ERROR: This username is already registered. Please choose another one.", msg.getText());
 		}
 //This test is to assume that if a user input invalid strings as a username 
@@ -66,10 +66,10 @@ public class RegisterTest {
 	    driver.findElement(By.id("user_email")).clear();
 	    driver.findElement(By.id("user_email")).sendKeys("tal88@pitt.edu");
 	    driver.findElement(By.id("aiowps-captcha-answer")).clear();
-	    driver.findElement(By.id("aiowps-captcha-answer")).sendKeys("");
+	    driver.findElement(By.id("aiowps-captcha-answer")).sendKeys("11");
 	    driver.findElement(By.id("wp-submit")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		WebElement msg = driver.findElement(By.xpath("//*[@id=\"ajax_loginform\"]/p[1]/weak"));
+		WebElement msg = driver.findElement(By.xpath("//*[@id=\"ajax_registerform\"]/p[1]/strong[1]"));
 		assertEquals("ERROR: This username is invalid because it uses illegal characters. Please enter a valid username.", msg.getText());
 }
 }
