@@ -31,9 +31,10 @@ As a user I have to register on the web site so that I can buy products
     Then I should get an error message “This username is already registered. Please chose another one.”
 
 ###Scenario 3
-Given I am in the register page, http://store.demoqa.com/tools-qa/?action=register
-When I input a invalid username taolee*&^ and a correct email tal88@pitt.edu
-Then I should get an error message “This username is invalid because it uses illegal characters. Please enter a valid username.” 
+
+        Given I am in the register page, http://store.demoqa.com/tools-qa/?action=register
+        When I input a invalid username taolee*&^ and a correct email tal88@pitt.edu
+        Then I should get an error message “This username is invalid because it uses illegal characters. Please enter a valid username.” 
 
 
 ##User Story 2
@@ -42,24 +43,25 @@ As a user, one of the most important things is to log in to the web site to buy 
 
 ###Scenario 1
 
-Given I am in the log in page, http://store.demoqa.com/tools-qa/ 
-And I registered with username taolee and password 13818186731
-When I input the correct username and password.
-Then I can log in the web site.
+        Given I am in the log in page, http://store.demoqa.com/tools-qa/ 
+        And I registered with username taolee and password 13818186731
+        When I input the correct username and password.
+        Then I can log in the web site.
 
 ###Scenario 2
 
-Given I am in the log in page, http://store.demoqa.com/tools-qa/ 
-And I registered with username taolee and password 13818186731
-When I input the correct username taolee and incorrect password 123
-Then I should get an error message
+        Given I am in the log in page, http://store.demoqa.com/tools-qa/ 
+        And I registered with username taolee and password 13818186731
+        When I input the correct username taolee and incorrect password 123
+        Then I should get an error message
 
 
 ###Scenario 3
-Given I am in the log in page, http://store.demoqa.com/tools-qa/ 
-And I registered with username taolee and password 13818186731
-When I input the incorrect usrname and password
-Then I should get an error message
+
+        Given I am in the log in page, http://store.demoqa.com/tools-qa/ 
+        And I registered with username taolee and password 13818186731
+        When I input the incorrect usrname and password
+        Then I should get an error message
 
 
 ##User Story 3
@@ -68,9 +70,9 @@ As a user, I need to get the product information through searching
 
 ###Scenario 1
 
-Given I am in the homepage http://store.demoqa.com/
-When I input “apple tv” and type “enter”
-Then I should see there is only one product information in the search list
+        Given I am in the homepage http://store.demoqa.com/
+        When I input “apple tv” and type “enter”
+        Then I should see there is only one product information in the search list
 
 
 ###Scenario 2
@@ -80,8 +82,9 @@ Then I should see all the iphone products information in the search list
 
 
 ###Scenario 3
-Given I am in the homepage http://store.demoqa.com/
-When I input “pineapple” pen and type “enter”
-Then I should get a message “Sorry, but nothing matched your search criteria. Please try again with some different keywords.”
+
+        Given I am in the homepage http://store.demoqa.com/
+        When I input “pineapple” pen and type “enter”
+        Then I should get a message “Sorry, but nothing matched your search criteria. Please try again with some different keywords.”
 
 
