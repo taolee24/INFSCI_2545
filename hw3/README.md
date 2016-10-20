@@ -15,7 +15,7 @@ I met some problems during the project. First, during the login test, I need to 
 
 ##User Story 1
 
-As a user I have to register on the web site so that I can buy products
+As a user I have to register on the web site so that I can buy products.
 
 ###Scenario 1
 
@@ -39,7 +39,7 @@ As a user I have to register on the web site so that I can buy products
 
 ##User Story 2
 
-As a user, one of the most important things is to log in to the web site to buy products
+As a user, one of the most important things is to log in to the web site.So that I can buy products and manage my information.
 
 ###Scenario 1
 
@@ -63,7 +63,7 @@ As a user, one of the most important things is to log in to the web site to buy 
 
 ##User Story 3
 
-As a user, I need to get the product information through searching 
+As a user, I would like to get the product information quickly through searching.
 
 ###Scenario 1
 
